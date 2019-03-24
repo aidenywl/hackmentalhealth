@@ -6,7 +6,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="fadein background">
-        <Time />
+        <div className="center">
+          <Time />
+        </div>
       </div>
     );
   }
