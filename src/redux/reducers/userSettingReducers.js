@@ -4,8 +4,9 @@ import { Set } from "immutable";
 import {
   SET_FEELING,
   SELECT_THEME,
-  SELECT_TASK
-} from "redux/actions/userSettings.js";
+  SELECT_TASK,
+  CHECK_TASK
+} from "redux/actions/userSettings";
 
 const feelingValue = (state = 5, action) => {
   switch (action.type) {
@@ -36,8 +37,19 @@ const selectedTasks = (state = Set(), action) => {
   }
 };
 
+const completedTasks = (state = Set(), action) => {
+  switch (action.type) {
+    case CHECK_TASK:
+      const task = action.payload;
+      return state.has(task) ? state.remove(task) : state.add(task);
+    default:
+      return state;
+  }
+};
+
 export default combineReducers({
   feelingValue,
   selectedThemes,
-  selectedTasks
+  selectedTasks,
+  completedTasks
 });

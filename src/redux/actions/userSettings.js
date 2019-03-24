@@ -1,6 +1,7 @@
 export const SET_FEELING = "SET_FEELING";
 export const SELECT_THEME = "SELECT_THEME";
 export const SELECT_TASK = "SELECT_TASK";
+export const CHECK_TASK = "CHECK_TASK";
 
 export const setFeeling = value => {
   return {
@@ -19,6 +20,14 @@ export const selectTheme = theme => {
 export const selectTask = task => {
   return {
     type: SELECT_TASK,
+    payload: task
+  };
+};
+
+export const checkTask = task => {
+  console.log("PUSHING TASK");
+  return {
+    type: CHECK_TASK,
     payload: task
   };
 };

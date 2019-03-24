@@ -32,7 +32,8 @@ class Feeling extends React.Component {
     return (
       <div className="feeling">
         <h3>How are you feeling today?</h3>
-
+        <br />
+        <br />
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-blog">
             <div className="title text-center">

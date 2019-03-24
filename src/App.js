@@ -9,6 +9,7 @@ import Quote from "components/Quote";
 import ThemeSelection from "components/ThemeSelection";
 import { Button } from "semantic-ui-react";
 import TaskSelection from "components/TaskSelection";
+import MainDisplay from "components/MainDisplay";
 
 import {
   MODES,
@@ -73,16 +74,33 @@ class App extends React.Component {
           >
             <TaskSelection />
           </CSSTransition>
-          <br />
-          <Button
-            inverted
-            fluid
-            onClick={() => {
-              this.props.updateMode(this._nextMode());
-            }}
+          <CSSTransition
+            in={isMainMode(currentMode)}
+            timeout={300}
+            unmountOnExit
+            onExited={() => updateMode(this._nextMode())}
+            classNames="menu"
           >
-            Next
-          </Button>
+            <MainDisplay />
+          </CSSTransition>
+          <br />
+          <CSSTransition
+            in={!isMainMode(currentMode)}
+            timeout={300}
+            unmountOnExit
+            onExited={() => updateMode(this._nextMode())}
+            classNames="menu"
+          >
+            <Button
+              inverted
+              fluid
+              onClick={() => {
+                this.props.updateMode(this._nextMode());
+              }}
+            >
+              {isTaskMode(currentMode) ? "Save" : "Next"}
+            </Button>
+          </CSSTransition>
         </div>
         <Quote />
       </div>

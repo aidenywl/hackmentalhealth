@@ -43,6 +43,8 @@ class ThemeSelection extends React.Component {
     return (
       <div className="ThemeSelection">
         <h3>What do you want to achieve?</h3>
+        <br />
+        <br />
         {this._renderThemeList()}
       </div>
     );
