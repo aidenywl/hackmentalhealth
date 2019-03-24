@@ -72,8 +72,7 @@ class App extends React.Component {
             Next
           </Button>
         </div>
-        <div className="center">
-        </div>
+        <div className="center" />
         <Quote />
       </div>
     );
