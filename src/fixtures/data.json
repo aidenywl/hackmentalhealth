@@ -1,0 +1,54 @@
+{
+  "themes": [
+    "EMPOWERMENT",
+    "CONFIDENCE",
+    "INDEPENDENCE",
+    "SOCIABILITY",
+    "RELAXATION",
+    "FUN"
+  ],
+  "activities": {
+    "EMPOWERMENT": [
+      "Take a walk",
+      "Clean up your room",
+      "Exercise / Workout",
+      "Pick up a new skill",
+      "Do volunteer work"
+    ],
+    "CONFIDENCE": [
+      "Smile in front of the mirror",
+      "Go for a haircut",
+      "Change your social media Profile Picture",
+      "Ask a question in a class or meeting",
+      "Talk to a stranger"
+    ],
+    "INDEPENDENCE": [
+      "Clean up your room",
+      "Cook yourself a meal",
+      "Go grocery shopping alone",
+      "Explore a new place",
+      "Make your own appointment for something"
+    ],
+    "SOCIABILITY": [
+      "Text a friend",
+      "Call a friend",
+      "Go out with a friend",
+      "Play a team sport",
+      "Make a new friend"
+    ],
+    "RELAXATION": [
+      "Listen to music or a podcast",
+      "Take a walk in the park",
+      "Try Yoga",
+      "Take a break from technology",
+      "Start a diary"
+    ],
+    "FUN": [
+      "Go to the movies",
+      "Meet a friend",
+      "Try a new sport",
+      "Check out a new place",
+      "Try a new food"
+    ]
+  }
+}

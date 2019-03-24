@@ -4,9 +4,11 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 /** Reducers */
 import time from "redux/reducers/timeReducers";
+import availableData from "redux/reducers/availableData";
 
 const reducers = {
-  time
+  time,
+  availableData
 };
 
 export const store = createStore(
