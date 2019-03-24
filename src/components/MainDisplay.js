@@ -37,7 +37,8 @@ class MainDisplay extends React.Component {
               style={this._renderCheckBoxLabelStyle(task)}
               onClick={() => this.handleClick(task)}
             >
-              • {task}
+      
+              □ {task}
             </List.Description>
           </List.Content>
         </List.Item>
