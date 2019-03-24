@@ -42,13 +42,7 @@ class PostTaskFeeling extends React.Component {
             <div>
               <div className="title text-center">
                 <br />
-                <Slider
-                  min={0}
-                  max={10}
-                  defaultValue={5}
-                  handle={handle}
-                  onChange={sliderValue => this.props.setFeeling(sliderValue)}
-                />
+                <Slider min={0} max={10} defaultValue={5} handle={handle} />
               </div>
             </div>
           </div>
