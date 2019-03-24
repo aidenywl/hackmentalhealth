@@ -5,7 +5,8 @@ export const MODES = {
   MOOD_SELECTION: "MOOD_SELECTION",
   THEME_SELECTION: "THEME_SELECTION",
   TASK_SELECTION: "TASK_SELECTION",
-  MAIN_SCREEN: "MAIN_SCREEN"
+  MAIN_SCREEN: "MAIN_SCREEN",
+  POST_TASK: "POST_TASK"
 };
 
 export const updateMode = mode => {
@@ -33,4 +34,8 @@ export const isTaskMode = mode => {
 
 export const isMainMode = mode => {
   return mode === MODES.MAIN_SCREEN;
+};
+
+export const isPostTaskMode = mode => {
+  return mode === MODES.POST_TASK;
 };

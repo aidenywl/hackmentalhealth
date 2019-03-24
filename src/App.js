@@ -10,11 +10,12 @@ import ThemeSelection from "components/ThemeSelection";
 import { Button } from "semantic-ui-react";
 import TaskSelection from "components/TaskSelection";
 import MainDisplay from "components/MainDisplay";
+import PostTaskFeeling from "components/PostTaskFeeling";
 
 import {
   MODES,
   isMoodMode,
-  isInitialMode,
+  isPostTaskMode,
   isThemeMode,
   isTaskMode,
   isMainMode,
@@ -34,6 +35,10 @@ class App extends React.Component {
     } else if (isThemeMode(currentMode) || isMoodMode(currentMode)) {
       return MODES.TASK_SELECTION;
     } else if (isTaskMode(currentMode)) {
+      return MODES.MAIN_SCREEN;
+    } else if (isMainMode(currentMode)) {
+      return MODES.POST_TASK;
+    } else if (isPostTaskMode(currentMode)) {
       return MODES.MAIN_SCREEN;
     } else {
       return MODES.MAIN_SCREEN;
@@ -83,6 +88,15 @@ class App extends React.Component {
           >
             <MainDisplay />
           </CSSTransition>
+          <CSSTransition
+            in={isPostTaskMode(currentMode)}
+            timeout={300}
+            unmountOnExit
+            onExited={() => updateMode(this._nextMode())}
+            classNames="menu"
+          >
+            <PostTaskFeeling />
+          </CSSTransition>
           <br />
           <CSSTransition
             in={!isMainMode(currentMode)}
@@ -98,7 +112,9 @@ class App extends React.Component {
                 this.props.updateMode(this._nextMode());
               }}
             >
-              {isTaskMode(currentMode) ? "Save" : "Next"}
+              {isTaskMode(currentMode) || isPostTaskMode(currentMode)
+                ? "Save"
+                : "Next"}
             </Button>
           </CSSTransition>
         </div>
