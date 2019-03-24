@@ -1,4 +1,6 @@
-import { SET_FEELING, SET_THEMES } from "redux/action/userSettings";
+import { combineReducers } from "redux";
+
+import { SET_FEELING } from "redux/actions/userSettings.js";
 
 export const feelingValue = (state = 5, action) => {
   switch (action.type) {
@@ -8,3 +10,7 @@ export const feelingValue = (state = 5, action) => {
       return state;
   }
 };
+
+export default combineReducers({
+  feelingValue
+});

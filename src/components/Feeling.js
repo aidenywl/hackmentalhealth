@@ -1,9 +1,12 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import Slider from "rc-slider";
 import Tooltip from "rc-tooltip";
 
 import "rc-slider/assets/index.css";
+
+import { setFeeling } from "redux/actions/userSettings";
 
 const Handle = Slider.Handle;
 
@@ -27,10 +30,23 @@ class Feeling extends React.Component {
     return (
       <div className="feeling">
         <h3>How are you feeling today?</h3>
-        <Slider min={0} max={10} defaultValue={5} handle={handle} />
+        <Slider
+          min={0}
+          max={10}
+          defaultValue={5}
+          handle={handle}
+          onChange={sliderValue => this.props.setFeeling(sliderValue)}
+        />
       </div>
     );
   }
 }
 
-export default Feeling;
+const mapDispatchToProps = {
+  setFeeling
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Feeling);
