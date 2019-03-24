@@ -8,7 +8,7 @@ import { selectTask, getTasksForThemes } from "redux/actions/userSettings";
 
 const buttonStyle = {
   margin: "10px",
-  maxWidth: "150px"
+  maxWidth: "300px"
 };
 
 const NUM_TASKS_TO_SHOW = 8;
