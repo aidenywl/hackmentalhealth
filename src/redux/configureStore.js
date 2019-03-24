@@ -5,12 +5,14 @@ import { composeWithDevTools } from "redux-devtools-extension";
 /** Reducers */
 import time from "redux/reducers/timeReducers";
 import availableData from "redux/reducers/availableData";
-import userSettings from "redux/reducers/userSettingReducers.js";
+import userSettings from "redux/reducers/userSettingReducers";
+import currentMode from "redux/reducers/modeReducers";
 
 const reducers = {
   time,
   availableData,
-  userSettings
+  userSettings,
+  currentMode
 };
 
 export const store = createStore(
