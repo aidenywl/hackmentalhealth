@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { List } from "semantic-ui-react";
 
 import { checkTask } from "redux/actions/userSettings";
+import { MODES, updateMode } from "redux/actions/mode";
 
 const checkboxLabelStyle = {
   fontWeight: "500",
@@ -17,6 +18,9 @@ class MainDisplay extends React.Component {
   handleClick(task) {
     console.log("handling click");
     this.props.checkTask(task);
+    if (!this.props.completedTasks.has(task)) {
+      this.props.updateMode(MODES.POST_TASK);
+    }
   }
 
   _renderCheckBoxLabelStyle(task) {
@@ -65,7 +69,8 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = {
-  checkTask
+  checkTask,
+  updateMode
 };
 
 export default connect(
