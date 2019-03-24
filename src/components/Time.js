@@ -4,13 +4,13 @@ import { connect } from "react-redux";
 import { getTimeNow } from "../redux/actions/time";
 
 const timeStyle = {
-  fontSize: "850%",
+  fontSize: "900%",
   letterSpacing: "-5px",
   userSelect: "none",
   color: "white",
   fontWeight: "500",
   textAlign: "center",
-  lineHeight: "1"
+  lineHeight: "0.4"
 };
 
 class Time extends React.Component {
@@ -23,8 +23,7 @@ class Time extends React.Component {
     const { hh, mm, a } = this.props;
     return (
       <div style={timeStyle}>
-        {`${hh}:${mm} `}
-        <span style={{ fontSize: 40, letterSpacing: ".02em" }}>{a}</span>
+        {`${hh}:${mm} `} <span style={{ fontSize: 50, letterSpacing: ".01em" }}>{a}</span>
       </div>
     );
   }
