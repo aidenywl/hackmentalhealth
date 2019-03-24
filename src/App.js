@@ -3,7 +3,9 @@ import { connect } from "react-redux";
 
 import Time from "components/Time";
 import Feeling from "components/Feeling";
+
 import Quote from "components/Quote";
+import ThemeSelection from "components/ThemeSelection";
 
 import { getAvailableThemesAndActivites } from "redux/actions/baseData";
 
@@ -18,7 +20,7 @@ class App extends React.Component {
           <Time />
         </div>
         <div className="center">
-          <Feeling />
+          <ThemeSelection />
         </div>
         <div className="center">
         </div>
