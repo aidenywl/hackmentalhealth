@@ -10,7 +10,8 @@ const timeStyle = {
   color: "white",
   fontWeight: "500",
   textAlign: "center",
-  lineHeight: "0.4"
+  lineHeight: "0.4",
+  textShadow: "2px 2px 50px black"
 };
 
 class Time extends React.Component {
