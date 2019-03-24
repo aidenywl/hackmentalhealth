@@ -11,6 +11,7 @@ import { Button } from "semantic-ui-react";
 import TaskSelection from "components/TaskSelection";
 import MainDisplay from "components/MainDisplay";
 import PostTaskFeeling from "components/PostTaskFeeling";
+import Helpline from "components/Helpline";
 
 import {
   MODES,
@@ -48,6 +49,7 @@ class App extends React.Component {
     const currentMode = this.props.currentMode;
     return (
       <div className="fadein background">
+        <Helpline />
         <div className="time">
           <Time />
         </div>
