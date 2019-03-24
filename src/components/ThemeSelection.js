@@ -20,7 +20,6 @@ class ThemeSelection extends React.Component {
       <FlexContainer>
         {themeList &&
           themeList.map(themeObj => {
-            console.log(themeObj);
             return (
               <Button
                 inverted

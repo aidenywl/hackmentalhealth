@@ -5,7 +5,6 @@ export const SELECT_THEME = "SELECT_THEME";
 
 export const getAvailableThemesAndActivites = () => {
   const data = fixtureData;
-  console.log(data);
   return {
     type: SET_BASE_DATA,
     payload: data
