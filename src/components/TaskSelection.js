@@ -64,7 +64,7 @@ class TaskSelection extends React.Component {
                 inverted
                 fluid
                 {...(this.props.selectedTasks.has(task)
-                  ? { color: "green" }
+                  ? { color: "blue" }
                   : null)}
                 style={buttonStyle}
                 onClick={this.handleClick(task)}
