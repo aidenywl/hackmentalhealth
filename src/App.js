@@ -4,6 +4,8 @@ import { CSSTransition } from "react-transition-group";
 
 import Time from "components/Time";
 import Feeling from "components/Feeling";
+
+import Quote from "components/Quote";
 import ThemeSelection from "components/ThemeSelection";
 import { Button } from "semantic-ui-react";
 
@@ -70,6 +72,9 @@ class App extends React.Component {
             Next
           </Button>
         </div>
+        <div className="center">
+        </div>
+        <Quote />
       </div>
     );
   }
