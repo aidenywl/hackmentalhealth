@@ -31,34 +31,34 @@ class Feeling extends React.Component {
   render() {
     return (
       <div className="feeling">
-      <h3>How are you feeling today?</h3>
+        <h3>How are you feeling today?</h3>
 
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-blog">
-          <div class="title text-center">
-          <img src={sad} alt="happy face" />
+        <div className="row">
+          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-blog">
+            <div className="title text-center">
+              <img src={sad} alt="happy face" />
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 single-blog">
+            <div>
+              <div className="title text-center">
+                <br />
+                <Slider
+                  min={0}
+                  max={10}
+                  defaultValue={5}
+                  handle={handle}
+                  onChange={sliderValue => this.props.setFeeling(sliderValue)}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-blog">
+            <div className="title text-center">
+              <img src={happy} alt="Sad face" />
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 single-blog">
-          <div>
-          <div class="title text-center">
-          <br />
-          <Slider
-            min={0}
-            max={10}
-            defaultValue={5}
-            handle={handle}
-            onChange={sliderValue => this.props.setFeeling(sliderValue)}
-          />
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-blog">
-          <div class="title text-center">
-          <img src={happy} alt="Sad face" />
-          </div>
-        </div>
-      </div>
       </div>
     );
   }

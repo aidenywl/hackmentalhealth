@@ -8,6 +8,7 @@ import Feeling from "components/Feeling";
 import Quote from "components/Quote";
 import ThemeSelection from "components/ThemeSelection";
 import { Button } from "semantic-ui-react";
+import TaskSelection from "components/TaskSelection";
 
 import {
   MODES,
@@ -63,16 +64,26 @@ class App extends React.Component {
           >
             <ThemeSelection />
           </CSSTransition>
+          <CSSTransition
+            in={isTaskMode(currentMode)}
+            timeout={300}
+            unmountOnExit
+            onExited={() => updateMode(this._nextMode())}
+            classNames="menu"
+          >
+            <TaskSelection />
+          </CSSTransition>
           <br />
           <Button
             inverted
             fluid
-            onClick={() => this.props.updateMode(this._nextMode())}
+            onClick={() => {
+              this.props.updateMode(this._nextMode());
+            }}
           >
             Next
           </Button>
         </div>
-        <div className="center" />
         <Quote />
       </div>
     );

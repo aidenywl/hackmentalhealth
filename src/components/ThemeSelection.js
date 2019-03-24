@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { Button } from "semantic-ui-react";
 import FlexContainer from "./FlexContainer";
 
-import { selectTheme } from "redux/actions/baseData";
+import { selectTheme } from "redux/actions/userSettings";
 
 const buttonStyle = {
   margin: "5px",
@@ -20,16 +20,18 @@ class ThemeSelection extends React.Component {
     return (
       <FlexContainer>
         {themeList &&
-          themeList.map(themeObj => {
+          themeList.map(theme => {
             return (
               <Button
                 inverted
                 fluid
-                {...(themeObj.selected ? { color: "blue" } : null)}
+                {...(this.props.selectedThemes.has(theme)
+                  ? { color: "blue" }
+                  : null)}
                 style={buttonStyle}
-                onClick={this.handleClick(themeObj.theme)}
+                onClick={this.handleClick(theme)}
               >
-                {themeObj.theme}
+                {theme}
               </Button>
             );
           })}
@@ -49,7 +51,8 @@ class ThemeSelection extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    themeList: state.availableData.availableThemes
+    themeList: state.availableData.availableThemes,
+    selectedThemes: state.userSettings.selectedThemes
   };
 };
 
