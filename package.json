@@ -5,6 +5,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
+    "immutable": "^4.0.0-rc.12",
+    "jquery": "^3.3.1",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "rc-slider": "^8.6.7",
@@ -16,6 +18,7 @@
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.86.0"
   },
   "scripts": {
