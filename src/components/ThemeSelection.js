@@ -7,7 +7,8 @@ import FlexContainer from "./FlexContainer";
 import { selectTheme } from "redux/actions/baseData";
 
 const buttonStyle = {
-  margin: "5px"
+  margin: "5px",
+  maxWidth: "300px"
 };
 class ThemeSelection extends React.Component {
   handleClick(theme) {
