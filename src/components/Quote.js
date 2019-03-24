@@ -1,7 +1,7 @@
 import React from "react";
 
 const quoteStyle = {
-  fontFamily: "Times New Roman",
+  fontFamily: "Verdana",
   fontSize: "100%",
   userSelect: "none",
   color: "white",

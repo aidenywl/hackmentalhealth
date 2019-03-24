@@ -35,7 +35,7 @@ class PostTaskFeeling extends React.Component {
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-blog">
             <div className="title text-center">
-              <img src={sad} alt="happy face" />
+              <img src={sad} alt="happy face" height = "80" width ="80" />
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 single-blog">
@@ -48,7 +48,7 @@ class PostTaskFeeling extends React.Component {
           </div>
           <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 single-blog">
             <div className="title text-center">
-              <img src={happy} alt="Sad face" />
+              <img src={happy} alt="Sad face" height = "80" width ="80" />
             </div>
           </div>
         </div>
