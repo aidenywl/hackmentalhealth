@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DailyBoost
 
-## Available Scripts
+Welcome to DailyBoost
 
-In the project directory, you can run:
+DailyBoost is a chrome extension that allows users to internalize their emotions to achieve a batter state of mind.
 
-### `npm start`
+## Getting Started
+To begin, you will need to add the google extension to your google browser. If you do not have a chrome browser, you will first need to download it.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Install Yarn
+2. Open Yarn in the project folder
+3. Yarn Build
+4. Open your Google Chrome browser
+5. Enter: "chrome://extensions/" into the search bar of Google Chrome
+6. Select "Load unpacked" on the top task bar
+7. Select the "Build" folder
+8. Open a new tab and you are good to go!
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+What things you need to install the software and how to install them.
+1. Google Chrome browser
+2. Node.js
+3. Yarn
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Privacy Policy
 
-### `npm run build`
+We believe in protecting the privacy of our users and will only share the data with professional counsellors with the consent of users.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* [React](https://reactjs.org/docs/getting-started.html) - The web framework used
+* [Redux](https://redux.js.org/basics/usage-with-react) - State management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* **Aiden Low** - *Initial work* - [yewwoei](https://github.com/yewwoei)
+* **Audrey** - *Initial work* - [audreywonggg](https://github.com/audreywonggg)
+* **Wayne Wee** - *Initial work* - [Waynerbee](https://github.com/Waynerbee)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
