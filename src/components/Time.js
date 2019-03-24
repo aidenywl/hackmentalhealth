@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { getTimeNow } from "../redux/actions/time";
 
 const timeStyle = {
-  fontSize: "1000%",
+  fontSize: "850%",
   letterSpacing: "-5px",
   userSelect: "none",
   color: "white",
