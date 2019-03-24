@@ -21,7 +21,6 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("https://farm5.staticflickr.com/4331/36972881175_5514d1dfc9_k.jpg");
   background-image: url("https://farm5.staticflickr.com/361/20197843892_e73fb1241e_b.jpg");
 }
 
@@ -43,17 +42,18 @@
 
 h3 {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 600;
   color: white;
   display: block;
   margin-block-start: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  text-shadow: 80px black;
   text-align: center;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: white;
   display: block;
@@ -63,6 +63,7 @@ p {
   margin-inline-end: 0px;
   text-align: center;
   text-shadow: 2px 2px 50px black;
+  padding-bottom: 20px;
 }
 .flex_container {
   width: 100%;
